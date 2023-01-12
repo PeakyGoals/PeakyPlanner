@@ -50,6 +50,10 @@ body {
     justify-content: space-around;
 }
 
+.info-box {
+    font-size: 14px;
+}
+
 hr {
     width: 90%;
 }
