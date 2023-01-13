@@ -110,14 +110,13 @@ input {
     border: 2px solid black;
     position: relative;
 }
-button {
+.button1 {
   transition: all 1s;
 }
 
-button:hover {
+.button1:hover {
     background-color: #2d89ba;
     transform: scale(1.2);
-    background-color: #2d89ba;
     transform: rotate(360deg);
 
 }
@@ -130,6 +129,13 @@ button:hover {
     background-color: #2596be;
     border: transparent;
     border: 2px solid black;
+    transition: all 0.4s;
+}
+
+
+.button2:hover {
+  background-color: #2d89ba;
+  transform: scale(1.2);
 }
 
 
