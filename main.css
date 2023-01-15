@@ -11,7 +11,7 @@ body {
     background: linear-gradient(0deg, rgba(102,155,188,1) 0%, rgba(0,48,73,1) 100%);*/
 }
 
-#login{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,4 +174,18 @@ input {
 .option_box{
     margin-left: 3%;
     margin-right: 3%;
+}
+
+
+.add_target {
+    float: left;
+}
+
+.target_info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+    
 }
