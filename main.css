@@ -11,7 +11,7 @@ body {
     background: linear-gradient(0deg, rgba(102,155,188,1) 0%, rgba(0,48,73,1) 100%);*/
 }
 
-#login{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
