@@ -19,45 +19,85 @@
                 <form action="">
                     <button class="button2">Delete goal</button>
                 </form>
+                
             </div>
-            
             <div id="display_goals">
-                <div class="goal">
-                    <div class="view">🖋</div>
-                    <div class="name">Your target 1</div>
-                    <div class="date">30/12/2022</div>
+                <div class="smart_display">
+                    <div class="smart_letter">S</div>
+                    <div class="smart_text">This is an example smart text which can be long if the user choses to, thus it wraps around.</div>
                 </div>
-                <div class="goal">
-                    <div class="view">🖋</div>
-                    <div class="name">Your target 2</div>
-                    <div class="date">30/12/2022</div>
+                <div class="smart_display">
+                    <div class="smart_letter">M</div>
+                    <div class="smart_text">This is an example smart text which can be long if the user choses to, thus it wraps around.</div>
                 </div>
+                <div class="smart_display">
+                    <div class="smart_letter">A</div>
+                    <div class="smart_text">This is an example smart text which can be long if the user choses to, thus it wraps around.</div>
+                </div>
+                <div class="smart_display">
+                    <div class="smart_letter">R</div>
+                    <div class="smart_text">It can also be a short description...</div>
+                </div>
+                <div class="smart_display">
+                    <div class="smart_letter">T</div>
+                    <div class="smart_text">This is an example smart text which can be long if the user choses to, thus it wraps around.</div>
+                </div>
+            </div>
+            <div> 
+                <!-- to edit, it sends back to new goal page but javascript will insert the previous text -->
+                <form action="new_goal.html?editing=true&goal_index=1" style="float:right;">
+                    <button class="button2">Edit SMART Goal</button>
+                </form>
             </div>
             <hr>
 
-            <div>
-                <div class="add_target">
+            <div class="target_list">
+                
+                
+                
+                <div class="target_info">
+                    <div style="width:50%">
+                        <p>Drink min. 6 glasses of water a day</p>
+                    </div>
+                    
+                    <div style="font-style: italic;">
+                        Status 
+                        <input type="checkbox">
+                    </div>
+                    
+                </div>
+                <hr class="list-division">
+                <div class="target_info">
+                    <div style="width:50%">
+                        <p>Drink min. 6 glasses of water a day</p>
+                    </div>
+                    
+                    <div style="font-style: italic;">
+                        Status 
+                        <input type="checkbox">
+                    </div>
+                    
+                    
+                </div>
+
+                
+
+            </div>
+
+            <div class="add_target_section">
+                
+                <select name="type-of-target">
+                    <option value="">Numeric target (eg. 8 cups of water)</option>
+                    <option value="">Boolean target (eg. done/ not done)</option>
+                    <option value="">Monetary (eg. saving X$ money)</option>
+                    <option value="">Task-related</option>
+                </select>
+                <textarea  type="text" style="resize: none;" placeholder="Type in your target for this goal"></textarea><br><br>
+                <div class="edit_button">
                     <form action="">
                         <button class="button2">Add new target</button>
                     </form>
                 </div>
-                
-                
-                <div class="target_info">
-                    <div>
-                        <p>Aaaaaaaaa</p>
-                    </div>
-                    
-                    <div>
-                        <input type="checkbox">
-                    </div>
-                    
-                    <div>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    </div>
-                    
-                </div>
-
             </div>
             
 

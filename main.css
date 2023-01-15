@@ -177,8 +177,8 @@ input {
 }
 
 
-.add_target {
-    float: left;
+.edit_button {
+    float: right;
 }
 
 .target_info {
@@ -187,5 +187,37 @@ input {
     justify-content:space-around;
     align-items: center;
     width:100%;
+    font-size: 17px;
+    padding-top: 10px;
     
+}
+
+.smart_display {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.smart_text {
+    font-size: 15px;
+    width:80%;
+}
+
+.smart_letter {
+    font-size: 50px;
+    width: 10%;
+}
+
+.list-division {
+    opacity: 50%;
+    width: 80%;
+}
+
+.add_target_section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
