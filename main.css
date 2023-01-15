@@ -171,6 +171,7 @@ input {
     margin: 1.2%;
     border-radius: 10px;
     border: 3.5px solid black;
+    cursor: pointer;
 }
 
 .view{
