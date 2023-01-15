@@ -16,7 +16,9 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align:center;
-    margin: auto;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 30%;
     height: 80%;
     padding: 50px 50px;
@@ -37,10 +39,12 @@ a:hover{
 }
 
 .all{
-    padding-top: 5%;
-    padding-bottom: 5%;
+    display: flex;
+    align-content: center;
     margin: 0;
     background: #f1fcfa;
+    position: relative;
+    min-height: 100vh;
 }
 
 .titles {
@@ -59,7 +63,7 @@ a:hover{
     justify-content: space-around;
 }
 
-.footer {
+footer {
     margin:0;
     font-family: 'Courier New', Courier, monospace;
     border-top: 2px solid black;
@@ -67,8 +71,8 @@ a:hover{
     display: flex;
     justify-content: center;
     color: white;
-    position: fixed; 
-    bottom: 0; 
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
@@ -109,8 +113,8 @@ input {
 .button2 {
     font-family: 'Trebuchet MS';
     border-radius: 12px;
-    padding: 15px 20px;
-    margin: 3px 0px;
+    padding: 3% 4%;
+    margin: 1% 0%;
     background-color: #8dd9b8;
     border: transparent;
     border: 1px solid black;
@@ -119,6 +123,23 @@ input {
 
 
 .button2:hover {
+    background-color: #62d1a1;
+    transform: scale(1.1);
+}
+
+.button3 {
+    font-family: 'Trebuchet MS';
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin: 1% 0%;
+    background-color: #8dd9b8;
+    border: transparent;
+    border: 1px solid black;
+    transition: all 0.4s;
+}
+
+
+.button3:hover {
     background-color: #62d1a1;
     transform: scale(1.1);
 }
@@ -132,10 +153,11 @@ input {
 }
 
 .goal{
+    background-color: #d5ece2;
     padding: 0;
     margin: 1.2%;
     border-radius: 10px;
-    border: 3.5px solid black;
+    border: 1.5px solid black;
     cursor: pointer;
 }
 
