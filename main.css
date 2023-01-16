@@ -233,12 +233,17 @@ input {
     border: 1px solid black;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
     
 }
 
 .smart_text {
     font-size: 15px;
     width:80%;
+}
+
+.smart_display:hover {
+    border: 3px solid black;
 }
 
 .smart_letter {

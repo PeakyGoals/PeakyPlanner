@@ -87,13 +87,14 @@
             <br>
             <div class="add_target_section">
                 
-                <select name="type-of-target">
-                    <option value="">Numeric target (eg. 8 cups of water)</option>
-                    <option value="">Boolean target (eg. done/ not done)</option>
-                    <option value="">Monetary (eg. saving X$ money)</option>
-                    <option value="">Task-related</option>
+                <select name="type-of-target" onchange="targetTypeChange(this)">
+                    <option value="t_task">Task-related</option>
+                    <option value="t_bool">Boolean target (eg. done/ not done)</option>
+                    <option value="t_mon">Monetary (eg. saving X$ money)</option>
+                    <option value="t_num">Numeric target (eg. 8 cups of water)</option>
                 </select>
                 <textarea  type="text" style="resize: none;" placeholder="Type in your target for this goal"></textarea><br><br>
+                <div id="target_element_section"></div>
                 <div class="edit_button">
                     <form action="">
                         <button class="button2">Add new target</button>
@@ -105,4 +106,33 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    function targetTypeChange(dropdown)
+    {
+        var val = dropdown.options[dropdown.selectedIndex].value;
+        
+        var el = document.getElementById("target_element");
+        if (el != null)
+            el.remove();
+        
+        var htmlContainer = document.getElementById('target_element_section');
+        var htmlContent = '';
+        switch (val) {
+            case "t_num": 
+                htmlContent = '<input type="range" min="1" max="100" value="50" class="slider" id="target_element">'
+                break;
+            case "t_bool":
+                htmlContent = '<p id="target_element">This element will show as complete/ not complete</p>'
+                break;
+            case "t_mon":
+                htmlContent = '<input id="target_element" type="text" placeholder="X$ (Financial Goal)"><br><br>'
+            
+        }
+        
+        htmlContainer.innerHTML = htmlContent;
+    }
+</script>
+    
+
 </html>
